@@ -1,57 +1,68 @@
-*{
+* {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
 }
+
 @font-face {
     font-family: "Dongle-light";
     src: url("Dongle/Dongle-Light.ttf");
 }
+
 @font-face {
     font-family: "Dongle-regular";
     src: url("Dongle/Dongle-Regular.ttf");
 }
+
 @font-face {
     font-family: "Dongle-bold";
     src: url("Dongle/Dongle-Bold.ttf");
 }
-header{
+
+header {
     display: flex;
     padding: 20px;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     align-items: center;
 }
-.logo img{
+
+.logo img {
     max-width: 15%;
 }
-.nav-menu ul{
- display: flex;
+
+.nav-menu ul {
+    display: flex;
 }
-.nav-menu li{
+
+.nav-menu li {
     list-style: none;
     margin-right: 20px;
 }
-.nav-menu li:last-child{
+
+.nav-menu li:last-child {
     margin-right: 0;
 }
-.nav-menu a{
+
+.nav-menu a {
     text-decoration: none;
     font-family: "Dongle-bold";
     font-size: 1.6rem;
     color: #333;
     transition: all ease 0.3s;
 }
-.nav-menu a:hover{
+
+.nav-menu a:hover {
     color: #ff7f50;
 }
 
-.hero{
+.hero {
     position: relative;
     height: 600px;
     overflow: hidden;
 }
-.hero-image img{
+
+.hero-image img {
     position: absolute;
     top: 0;
     left: 0;
@@ -60,25 +71,29 @@ header{
     object-fit: cover;
     z-index: -1;
 }
-.hero-content{
+
+.hero-content {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     text-align: center;
     color: #fff;
 }
-.hero-content h1{
+
+.hero-content h1 {
     font-family: "Dongle-bold";
     font-size: 4rem;
 }
-.hero-content p{
+
+.hero-content p {
     font-family: "Dongle-regular";
     font-size: 1.8rem;
     margin-top: -20px;
     margin-bottom: 10px;
 }
-.hero-button{
+
+.hero-button {
     display: inline-block;
     text-decoration: none;
     color: #fff;
@@ -89,124 +104,148 @@ header{
     font-size: 1.6rem;
     transition: all ease 0.3s;
 }
-.hero-button:hover{
+
+.hero-button:hover {
     background-color: #333;
 }
-.destinations{
+
+.destinations {
     font-size: 2.4rem;
     font-family: "Dongle-bold";
     margin: 40px 80px;
     text-align: center;
 }
-.destinations h2{
+
+.destinations h2 {
     margin-bottom: 40px;
 }
-.destination-grid{
+
+.destination-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 40px;
 }
-.destination-item img{
+
+.destination-item img {
     width: 100%;
     height: 400px;
     object-fit: cover;
 }
-.destination-item{
+
+.destination-item {
     text-align: left;
 }
-.destination-item h3{
+
+.destination-item h3 {
     font-size: 2rem;
 }
-.destination-item p{
+
+.destination-item p {
     font-size: 1.4rem;
     line-height: 1;
     font-family: "Dongle-regular";
 }
-.about{
+
+.about {
     text-align: center;
     padding: 100px;
 }
-.about h3{
-   font-family: "Dongle-bold";
-   font-size: 3rem;
+
+.about h3 {
+    font-family: "Dongle-bold";
+    font-size: 3rem;
 }
-.about p{
+
+.about p {
     font-family: "Dongle-regular";
     font-size: 1.4rem;
     line-height: 1;
     margin-bottom: 40px;
 }
-.team-members{
+
+.team-members {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.team-member img{
+
+.team-member img {
     width: 300px;
     height: 300px;
     margin: 20px;
     object-fit: cover;
 }
-.team-member h4{
+
+.team-member h4 {
     font-family: "Dongle-bold";
     font-size: 2rem;
 }
-.contact{
+
+.contact {
     padding: 80px;
     text-align: center;
     background-color: #F7F7F7;
 }
-.contact h3{
+
+.contact h3 {
     font-family: "Dongle-bold";
     font-size: 3rem;
 }
-.contact-info p{
+
+.contact-info p {
     font-family: "Dongle-regular";
     font-size: 1.4rem;
     margin-bottom: 20px;
 }
-.contact-info ul{
+
+.contact-info ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin-bottom: 40px;
-} 
-.contact-info li{
+}
+
+.contact-info li {
     margin: 0 20px;
     font-family: "Dongle-regular";
     font-size: 1.4rem;
     display: flex;
     align-items: center;
-  
 }
-.contact-info li a{
+
+.contact-info li a {
     text-decoration: none;
     font-family: "Dongle-regular";
     color: black;
 }
-.contact-info i{
+
+.contact-info i {
     font-size: 24px;
     margin-right: 10px;
 }
-.form{
+
+.form {
     width: 100%;
 }
-input,textarea{
+
+input, textarea {
     width: 70%;
     padding: 10px;
     margin: 20px 0;
     border: none;
-    box-shadow: 0 0 5px rgba(0,0,0, 0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     font-size: 1.4rem;
     font-family: "Dongle-regular";
 }
-textarea{
+
+textarea {
     height: 200px;
 }
-.form button{
+
+.form button {
     display: inline-block;
     text-decoration: none;
     color: #fff;
@@ -218,11 +257,12 @@ textarea{
     border: none;
     transition: all ease 0.3s;
 }
-.form button:hover{
+
+.form button:hover {
     background-color: #333;
 }
 
-footer{
+footer {
     background-color: #333;
     color: #fff;
     display: flex;
@@ -230,80 +270,98 @@ footer{
     padding: 20px;
     align-items: center;
 }
-.social-icons a{
+
+.social-icons a {
     color: #fff;
     font-size: 24px;
     margin-right: 20px;
 }
-footer p{
+
+footer p {
     font-family: "Dongle-regular";
     font-size: 1.4rem;
 }
+
+/* Media Queries for responsiveness */
+
+/* Large Tablets */
 @media (max-width: 1177px) {
-    .hero-content h1{
+    .hero-content h1 {
         line-height: 0.7;
     }
-    .hero-content p{
+    .hero-content p {
         margin-top: 0;
         line-height: 0.8;
     }
-    .destinations img{
+    .destinations img {
         height: 250px;
     }
-    input, textarea{
+    input, textarea {
         width: 100%;
     }
 }
+
+/* Medium Devices (Tablets) */
 @media (max-width: 768px) {
-    .hero-content h1{
+    .hero-content h1 {
         margin-bottom: 5px;
     }
-    .team-member img{
+    .team-member img {
         width: 200px;
         height: 200px;
     }
-    .destination-grid{
+    .destination-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 40px;
     }
 }
-@media (max-width:603px){
-    .hero-content h1{
+
+/* Small Devices (Phones) */
+@media (max-width: 603px) {
+    .hero-content h1 {
         font-size: 2rem;
     }
-    .hero-content p{
+    .hero-content p {
         font-size: 1.5rem;
     }
 }
-@media (max-width:430px){
-    header{
+
+/* Extra Small Devices (Small Phones) */
+@media (max-width: 430px) {
+    /* Hide the navigation bar for mobile view */
+    .nav-menu {
         display: none;
     }
-    .hero-content h1{
+    
+    header {
+        display: none;
+    }
+
+    .hero-content h1 {
         font-size: 1.3rem;
     }
-    .hero-content p{
+    .hero-content p {
         font-size: 1rem;
     }
-    .hero-button{
+    .hero-button {
         padding: 6px 22px;
         font-size: 16px;
     }
-    .destinations{
+    .destinations {
         font-size: 1.5rem;
     }
-    .destination-grid{
+    .destination-grid {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 40px;
     }
-    .about{
+    .about {
         padding: 0 30px;
     }
-    .team-member img{
+    .team-member img {
         width: 250px;
         height: 250px;
     }
 }
-  
+
